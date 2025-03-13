@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+h2 {
+    color: 000000;
+    margin-inline: auto;
+    width: 375px;
+    background-color: rgba(0, 255, 255, 0.46);
+    text-align: center;
+    border-radius: 7px;
+    border: 2px rgb(45, 153, 120)solid;
+    
+}
+
+span { display: inline-block;
+    
+    will-change: auto;
+    animation: marquee 2s linear infinite;
+    gap: 50px;
+    width: max-content;
+    
+}
+
+div {
+    /* margin-left: 600px; */
+    margin-inline: auto;
+    margin-top: 200px;
+    width: 380px;
+    padding: 20px;
+    border-radius: 10px;
+    
+    /* border: 2px blue solid; */
+    background-color: rgba(21, 47, 29, 0.319);    
+    box-shadow: 1px 1px 5px;
+}
+
+body {
+    
+    background-color: rgb(45, 153, 120);
+}
+
+img {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+button {
+    border: 2px black solid;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(45, 153, 120);
+    color: white;
+}
+
+button:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-45%);
+    }
+}

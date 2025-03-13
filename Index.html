@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h2><span>Turn on/off Light</span></h2>
+
+    <button onclick ="turnon ()">Turn on the light</button> 
+    <img id="myImage" src="./Image/pic_bulboff.gif" alt="bulb off">
+    <button onclick ="turnoff ()">Turn off the light</button>
+    <!-- <img src="./Image/pic_bulbon.gif" alt=""> -->
+    </div>
+
+    <script>
+        function turnon () {
+            document.getElementById("myImage").src = "./Image/pic_bulbon.gif";
+        }
+
+        function turnoff () {
+            document.getElementById("myImage").src = "./Image/pic_bulboff.gif";
+        }
+    </script>
+</body>
+</html>
